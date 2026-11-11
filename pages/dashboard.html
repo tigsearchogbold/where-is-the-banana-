@@ -1,0 +1,138 @@
+﻿```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>An NLP-Based Customer Complaint Classification | Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Sidebar (desktop) -->
+      <aside class="col-lg-2 d-none d-lg-block sidebar p-3">
+        <a href="../index.html" class="text-white text-decoration-none fw-bold fs-5 d-block mb-4"><i class="bi bi-mortarboard-fill"></i> An NLP-Based Customer Complaint Classification</a>
+        <ul class="nav nav-pills flex-column gap-1">
+          <li class="nav-item"><a href="dashboard.html" class="nav-link active"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-book me-2"></i>Courses</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-calendar-event me-2"></i>Schedule</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-bar-chart me-2"></i>Grades</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-gear me-2"></i>Settings</a></li>
+          <li class="nav-item mt-4"><a href="../index.html" class="nav-link"><i class="bi bi-box-arrow-left me-2"></i>Logout</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main -->
+      <main class="col-lg-10 p-0">
+        <!-- Top bar -->
+        <nav class="navbar bg-white shadow-sm px-3">
+          <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Open menu"><i class="bi bi-list"></i></button>
+          <span class="navbar-text fw-semibold d-none d-sm-inline">Student Dashboard</span>
+          <div class="dropdown ms-auto">
+            <a href="#" class="d-flex align-items-center text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../assets/images/students.jpg" class="rounded-circle me-2" width="36" height="36" style="object-fit:cover" alt="Profile">
+              <span>Aze I. Denamarca</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="p-4">
+          <h3 class="fw-bold mb-1">Welcome back, Aze I. Denamarca!</h3>
+          <p class="text-muted mb-4">Here is what is happening with your studies.</p>
+
+          <!-- Stat cards -->
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6 col-xl-3">
+              <div class="card stat-card border-0 shadow-sm"><div class="card-body d-flex justify-content-between align-items-center">
+                <div><div class="text-muted small">Courses</div><div class="fs-3 fw-bold">6</div></div>
+                <i class="bi bi-book text-primary"></i></div></div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card stat-card border-0 shadow-sm"><div class="card-body d-flex justify-content-between align-items-center">
+                <div><div class="text-muted small">Assignments Due</div><div class="fs-3 fw-bold">3</div></div>
+                <i class="bi bi-clipboard-check text-warning"></i></div></div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card stat-card border-0 shadow-sm"><div class="card-body d-flex justify-content-between align-items-center">
+                <div><div class="text-muted small">Average Grade</div><div class="fs-3 fw-bold">92%</div></div>
+                <i class="bi bi-trophy text-success"></i></div></div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="card stat-card border-0 shadow-sm"><div class="card-body d-flex justify-content-between align-items-center">
+                <div><div class="text-muted small">Messages</div><div class="fs-3 fw-bold">12</div></div>
+                <i class="bi bi-envelope text-danger"></i></div></div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Progress -->
+            <div class="col-lg-5">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-white fw-semibold">Course Progress</div>
+                <div class="card-body">
+                  <p class="mb-1">HTML &amp; CSS</p>
+                  <div class="progress mb-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-success" style="width: 90%">90%</div></div>
+                  <p class="mb-1">Bootstrap</p>
+                  <div class="progress mb-3" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width: 65%">65%</div></div>
+                  <p class="mb-1">JavaScript</p>
+                  <div class="progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar bg-warning" style="width: 30%">30%</div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <div class="col-lg-7">
+              <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-white fw-semibold">Recent Assignments</div>
+                <div class="table-responsive">
+                  <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light"><tr><th>Title</th><th>Course</th><th>Due</th><th>Status</th></tr></thead>
+                    <tbody>
+                      <tr><td>Landing Page</td><td>Bootstrap</td><td>Nov 10</td><td><span class="badge text-bg-warning">Pending</span></td></tr>
+                      <tr><td>Login Form</td><td>HTML &amp; CSS</td><td>Nov 08</td><td><span class="badge text-bg-success">Submitted</span></td></tr>
+                      <tr><td>Portfolio</td><td>Web Project</td><td>Nov 15</td><td><span class="badge text-bg-warning">Pending</span></td></tr>
+                      <tr><td>Quiz 3</td><td>JavaScript</td><td>Nov 02</td><td><span class="badge text-bg-danger">Late</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Mobile sidebar -->
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel"><i class="bi bi-mortarboard-fill"></i> An NLP-Based Customer Complaint Classification</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="dashboard.html" class="nav-link text-white">Dashboard</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Courses</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Schedule</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-white">Grades</a></li>
+        <li class="nav-item"><a href="../index.html" class="nav-link text-white">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+```
